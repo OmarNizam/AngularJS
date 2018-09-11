@@ -1,31 +1,5 @@
 <p>
   Welcome {{name}}!
 </p>
-<h2 [class]="successClass">
-  Codevolution
-</h2>
-<h2 class="text-success">
-  Omar Nizam Aldeen
-</h2>
-<h2 [class.text-danger]="hasError">
- Error
-</h2>
-<h2 [ngClass]="messageClasses">
-  message
-</h2>
-<h2 [style.color]="hasError ? 'red' : 'green'">
-  Style binding 1
-</h2>
-<h2 [style.color]="highlightcolor">
-  Style binding 2 with highlight
-</h2>
-<h2 [ngStyle]="titleStyles">
-    Style binding 3
-</h2>
-<button (click)="onClick($event)">
-  Greet
-</button>
-<p>
-  {{greeting}}
-</p>
-<button (click)="greeting = 'Welcome Omar !!!!'">Greet2</button>
+<input #myInput type="text"/>
+<button (click)="logMessage(myInput.value)" >Log</button>
