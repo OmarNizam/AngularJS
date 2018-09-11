@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  public name = "Omar Nizam";
+  public siteUrl = window.location.href;
+  public myId = "testId";
+  public isdisabled = false;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  greetUser() {
+    return "Hi " + this.name;
   }
 
 }
