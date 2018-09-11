@@ -13,3 +13,12 @@
 <h2 [ngClass]="messageClasses">
   message
 </h2>
+<h2 [style.color]="hasError ? 'red' : 'green'">
+  Style binding 1
+</h2>
+<h2 [style.color]="highlightcolor">
+  Style binding 2 with highlight
+</h2>
+<h2 [ngStyle]="titleStyles">
+    Style binding 3
+</h2>
