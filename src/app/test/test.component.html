@@ -1,22 +1,15 @@
 <p>
   Welcome {{name}}!
 </p>
-<h2>
-  {{2+6}}
+<h2 [class]="successClass">
+  Codevolution
 </h2>
-<h2>
-  {{ "Hello " + name}}
+<h2 class="text-success">
+  Omar Nizam Aldeen
 </h2>
-<h2>
-  {{"The length of the name is: " + name.length}}
+<h2 [class.text-danger]="hasError">
+ Error
 </h2>
-<h2>
-  {{"The name in upperCase: " + name.toUpperCase()}}
+<h2 [ngClass]="messageClasses">
+  message
 </h2>
-<h2>
-  {{greetUser()}}
-</h2>
-<h2>
-  {{siteUrl}}
-</h2>
-<input [disabled]="isdisabled" [id]="myId" type="text" value="OOOO" />
