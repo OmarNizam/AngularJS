@@ -1,5 +1,7 @@
-<p>
+<div>
+  <p>
   Welcome {{name}}!
-</p>
-<input #myInput type="text"/>
-<button (click)="logMessage(myInput.value)" >Log</button>
+  </p>
+  <input [(ngModel)]="name" type="text"/>
+  {{name}}
+</div>
