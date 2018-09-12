@@ -2,9 +2,12 @@
   <p>
   Welcome {{name}}!
   </p>
-  <h2 *ngIf="displayName; else elseBlock">
-    Codevalution
-  </h2>
+  <div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+  <ng-template #thenBlock>
+    <h2>
+      Codevalution
+    </h2>
+  </ng-template>
   <ng-template #elseBlock>
     <h2>
       The text is hidden !!!
