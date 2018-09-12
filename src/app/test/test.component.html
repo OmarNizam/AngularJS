@@ -2,6 +2,12 @@
   <p>
   Welcome {{name}}!
   </p>
-  <input [(ngModel)]="name" type="text"/>
-  {{name}}
+  <h2 *ngIf="displayName; else elseBlock">
+    Codevalution
+  </h2>
+  <ng-template #elseBlock>
+    <h2>
+      The text is hidden !!!
+    </h2>
+  </ng-template>
 </div>
