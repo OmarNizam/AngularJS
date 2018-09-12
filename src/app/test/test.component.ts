@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "Omar Nizam";
-  public colors = ["red", "green", "blue", "yellow"];
+/* The app-Component is the parent and the test-component is the child component and the interact with each other
+They send data to each other:
+From the parent to child though @input
+From the chidld to the parent @output
+*/
+  @Input() public parentData;
 
   constructor() { }
 

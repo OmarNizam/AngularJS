@@ -2,25 +2,7 @@
   <p>
   Welcome {{name}}!
   </p>
-  <div *ngFor="let color of colors; index as i">
-    <h3>{{i}} - {{color}}</h3>
-  </div>
-  <h3>Array with if first element true:</h3>
-  <div *ngFor="let color of colors; first as f">
-    <h3>{{f}} - {{color}}</h3>
-  </div>
-  <h3>Array with if last element true:</h3>
-  <div *ngFor="let color of colors; last as l">
-    <h3>{{l}} - {{color}}</h3>
-  </div>
-  <h3>Array with if odd element true:</h3>
-  <div *ngFor="let color of colors; odd as o">
-    <h3>{{o}} - {{color}}</h3>
-  </div>
-  <h3>Array with if even element true:</h3>
-  <div *ngFor="let color of colors; even as e">
-    <h3>{{e}} - {{color}}</h3>
-  </div>
+  <h2>{{"Hello " + parentData}}</h2>
 </div>
 
 
