@@ -1,4 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-test',
@@ -7,21 +8,12 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  public name = "Omar Nizam";
-  public message = "welcome to codevolution";
-  public person = {
-    "firstName": "John",
-    "lastName": "Doe"
-  };
-  public date = new Date();
+  public employees = [];
 
-  constructor() { }
+  constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit() {
-  }
-
-  greetUser() {
-    return "Hi " + this.name;
+    this.employees = this._employeeService.getEmployees();
   }
 
 
