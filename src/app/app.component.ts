@@ -8,3 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'AppComponent';
 }
+
+// HTTP Get request from EmpService

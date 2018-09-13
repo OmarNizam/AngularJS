@@ -13,8 +13,8 @@ export class TestComponent implements OnInit {
   constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit() {
-    this.employees = this._employeeService.getEmployees();
+    this._employeeService.getEmployees()
+        .subscribe(data => this.employees = data);
   }
-
 
 }
