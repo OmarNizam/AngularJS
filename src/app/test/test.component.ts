@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -8,12 +8,12 @@ import { Component, OnInit, Input } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "Omar Nizam";
-/* The app-Component is the parent and the test-component is the child component and the interact with each other
-They send data to each other:
-From the parent to child though @input
-From the chidld to the parent @output
-*/
-  @Input() public parentData;
+  public message = "welcome to codevolution";
+  public person = {
+    "firstName": "John",
+    "lastName": "Doe"
+  };
+  public date = new Date();
 
   constructor() { }
 
