@@ -8,6 +8,8 @@ import { EmployeeService } from '../employee.service';
 })
 export class DetailComponent implements OnInit {
 
+  public employees = [];
+
   constructor(private _employeeService: EmployeeService) { }
 
   ngOnInit() {
